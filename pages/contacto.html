@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAB Health - Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--EMPIEZA SECCION HEADER-->
+    <header>
+        <!-- SCRIPT BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+        <!-- MENU DEL SITIO-->
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="imglogo" src="../multimedia/logolab.jpg"
+                        alt="Logo Health Lab">
+                    <h1 class="tituloH1">health</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">LAB Health - Menú</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="estudios.html">Estudios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ordenes.html">Ordenes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="staff.html">Staff</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--EMPIEZA SECCION MAIN-->
+    <main>
+        <div class="whatsappBtn">
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="../multimedia/whatsapp.jpg"
+                    alt="Whatsapp"></a>
+        </div>
+        <section class="contactoContenedor1">
+            <div>
+                <article>
+                    <h2 class="h2titulo2">CONTACTO</h2>
+                </article>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <article>
+                        <label for="nombre" class="contactoNombrelbl">Nombre:</label>
+                        <input type="text" class="contactoNombreinp" name="nombreCompleto"
+                            placeholder="Tu nombre completo aquí">
+                    </article>
+                    <article>
+                        <label for="documento" class="contactoDocumento">Documento:</label>
+                        <input type="text" name="documento" placeholder="Tu dirección de e-mail aquí">
+                    </article>
+                    <article>
+                        <label for="telefono" class="contactoTelefono">Teléfono:</label>
+                        <input type="text" name="telefono" placeholder="Tu número de teléfono aquí">
+                    </article>
+                    <article>
+                        <label for="motivo" class="contactoMotivolbl">Motivo del contacto:</label>
+                        <select name="motivo" class="contactoMotivo">
+                            <option value="consulta">Consulta</option>
+                            <option value="sugerencia">Sugerrencia</option>
+                            <option value="queja">Queja</option>
+                        </select>
+                    </article>
+                    <article>
+                        <label for="contactoInfochk" class="recibirInfolbl">Quiero recibir información:</label>
+                        <input name="contactoInfochk" type="checkbox" checked="checked" class="recibirInfoinp">
+                    </article>
+                    <article>
+                        <p>¿Nos conoce por primera vez?</p>
+                        <label for="contactoConoceSi" class="nosConoceSi">Si</label>
+                        <input name="contactoConoceSi" type="radio" checked="checked" class="nosConoceSiInp">
+                        <label for="contactoConoceNo" class="nosConoceNo">No</label>
+                        <input name="contactoConoceNo" type="radio" class="nosConoceNoInp">
+                    </article>
+                    <article>
+                        <label for="detalle" class="contactoDetalle">Detalle:</label>
+                        <textarea name="detalle" rows="10" cols="50" placeholder="Tu mensaje aquí"></textarea>
+                    </article>
+                    <article>
+                        <input type="submit" class="contactoEnviar">
+                    </article>
+                </div>
+                <div class="col-6">
+                    <img class="img-fluid" src="../multimedia/amplitude-magazin-srXbJ1TAdhI-unsplash.jpg"
+                        alt="LAB Health. Imagen de https://unsplash.com/es/@amplitudemagazin">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Nuestras redes:</h2>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../multimedia/instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../multimedia/facebook.jpg" alt="Facebook"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="../multimedia/youtube.jpg" alt="Youtube"></a>
+        <p>Avenida Fantasía 1234 - Montevideo, Uruguay</p>
+        <p>© 2023 LAB Health. Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
