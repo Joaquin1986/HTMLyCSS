@@ -1,5 +1,74 @@
 /* seteos de contacto */
 
+.contactoNombrelbl{
+    margin-left: 16%;
+}
+
+.contactoDocumento{
+    margin-left: 11%;
+}
+
+.contactoTelefono{
+    margin-left: 16%;
+}
+
+.recibirInfolbl{
+    margin-left: 30%;
+}
+
+.recibirInfoinp{
+    position: relative;
+    left:2%;
+    height: 20px;
+    width: 20px;
+}
+
+.nosConoceSi{
+    position: relative;
+    left:57%;
+    top:-20px;
+    height: 20px;
+    width: 20px;  
+}
+
+.nosConoceSiInp{
+    position: relative;
+    left:48%;
+    top:-20px;
+    height: 20px;
+    width: 20px;
+}
+
+.nosConoceNo{
+    position: relative;
+    left:68%;
+    top:-20px;
+    height: 20px;
+    width: 20px;
+}
+
+.nosConoceNoInp{
+    position: relative;
+    left:58%;
+    top:-20px;
+    height: 20px;
+    width: 20px;
+}
+
+.contactoDetalle{
+    position: relative  ;
+    left:9%;
+    top:118%;
+}
+
+.contactoFormulario textarea{
+    margin-left: 30%;
+}
+
+.contactoEnviar{
+    margin-left: 30%;
+}
+
 #contactoImg1{
     margin-bottom: 50px;
 }
