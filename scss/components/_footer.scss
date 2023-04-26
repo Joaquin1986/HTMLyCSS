@@ -1,0 +1,35 @@
+//FOOTER
+
+/* seteos de pie de pagina */
+footer {
+    background-color: $mainColor;
+    width: 100%;
+    text-align: center;
+}
+
+footer h2 {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    color: $secondColor !important;
+    font-size: 12pt;
+
+}
+
+footer p {
+    color: $secondColor;
+    font-family: 'SourceSansPro';
+    font-size: 8pt;
+    margin-bottom: 0px;
+}
+
+footer img {
+    max-width: 50px;
+    border: 0px rgb(255, 255, 255) solid;
+    border-radius: 80px;
+    transition:0.5s;
+    filter:brightness(50%);
+    &:hover{
+        max-width: 60px;
+        filter:brightness(100%);
+    }
+}

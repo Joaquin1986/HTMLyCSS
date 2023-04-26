@@ -1,0 +1,22 @@
+/* seteos de staff */
+
+#staffImg3 {
+    margin-bottom: 50px;
+}
+
+.staffPieImagen1{
+    text-align: center;
+}
+
+.staffPieImagen2{
+    text-align: center;
+}
+
+.staffImg {
+    transition: 0.5s;
+    filter:grayscale(100%);
+    &:hover{
+        filter: grayscale(0%);
+    }
+     
+}

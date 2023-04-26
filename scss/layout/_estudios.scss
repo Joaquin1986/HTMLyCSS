@@ -1,0 +1,14 @@
+/* seteos de estudios */
+
+#estudiosImg4 {
+    margin-bottom: 50px;
+}
+
+.estudiosImg {
+    transition: 0.5s;
+    filter:grayscale(100%);
+
+    &:hover, &:focus {
+        filter:grayscale(0%);
+    }
+}

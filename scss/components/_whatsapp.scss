@@ -1,0 +1,21 @@
+//BOTON DE WHATSAPP
+
+.whatsappBtn {
+    position:sticky;
+    left: 94%;
+    top: 80%;
+    height: 55px;
+    width: 55px;
+
+    & img {
+        border: 0px solid;
+        border-radius: 80px;
+        width: 60px;
+        transition: 0.4s;
+        filter:brightness(50%);
+
+        &:hover {
+            filter:brightness(100%);
+        }
+    }
+}

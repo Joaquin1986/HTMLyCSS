@@ -1,0 +1,21 @@
+//ESTILOS GENERALES CON IMPORT
+
+//BASE
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/fonts';
+
+//COMPONENTS
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/whatsapp';
+
+//LAYOUT
+@import 'layout/h2titulos';
+@import 'layout/index';
+@import 'layout/estudios';
+@import 'layout/ordenes';
+@import 'layout/staff';
+@import 'layout/contacto';
+@import 'layout/mediaqueries';
+

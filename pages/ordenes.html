@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="En LAB Health, facilitamos el proceso de obtención de órdenes de laboratorio para tus pruebas y análisis de diagnóstico. Con nuestro sencillo proceso de obtención de órdenes, puedes estar seguro de que tus pruebas serán realizadas con precisión y rapidez, proporcionándote resultados confiables y precisos sobre tu salud.">
     <title>LAB Health - Ordenes</title>
     <link rel="stylesheet" href="../css/styles.css">
     <!-- LINK A ESTILOS BOOTSTRAP -->
@@ -22,7 +24,7 @@
         <!-- MENU DEL SITIO-->
         <nav class="navbar navbar-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img id="imglogo" src="../multimedia/logolab.jpg"
+                <a class="navbar-brand" href="../index.html"><img id="imglogo" src="../multimedia/logolab.jpg"
                         alt="Logo Health Lab">
                     <h1 class="tituloH1">health</h1>
                 </a>
@@ -47,7 +49,7 @@
                                 <a class="nav-link" href="estudios.html">Estudios</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Ordenes</a>
+                                <a class="nav-link active" href="ordenes.html">Ordenes</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="staff.html">Staff</a>
@@ -68,50 +70,56 @@
             <a href="https://www.whatsapp.com/" target="_blank"><img src="../multimedia/whatsapp.jpg"
                     alt="Whatsapp"></a>
         </div>
-        <section class="ordenesContenedor1">
-            <div>
-                <article>
-                    <h2 class="h2titulo2">ORDENES</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2titulo">ORDENES</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
-                        nec, mattis ac neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
-                        vulputate eu pharetra etra nec, mattis ac neque.Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Nulla quam velit,
+                        En LabHealth, hacemos que sea fácil y conveniente solicitar órdenes para tus pruebas de
+                        diagnóstico. Puedes hacerlo en línea a través de nuestra plataforma o mediante la app móvil.
+                        También aceptamos órdenes de médicos y otros proveedores de atención médica. Nuestro objetivo es
+                        brindarte un proceso de solicitud de pruebas sin complicaciones, para que puedas concentrarte en
+                        tu salud. ¡Haz tu pedido hoy y comienza tu camino hacia una vida más saludable!
                     </p>
-                </article>
+                </div>
             </div>
-        </section>
-        <section class="ordenesContenedor2">
-            <div class="ordenesFormulario">
-                <article>
-                    <label for="nombre" id="ordenesNombrelbl">Nombre:</label>
-                    <input type="text" id="ordenesNombreinp" name="nombreCompleto"
-                        placeholder="Tu nombre completo aquí">
-                </article>
-                <article>
-                    <label for="documento">Documento:</label>
-                    <input type="text" id="ordenesDocumento" name="documento" placeholder="Tu número de documento aquí">
-                </article>
-                <article>
-                    <label for="fecha" id="ordenesFechalbl">Fecha:</label>
-                    <input type="date" name="fecha" id="ordenesFechainp">
-                </article>
-                <article>
-                    <label for="analisis" id="ordenesAnalisislbl">Análisis:</label>
-                    <select name="analisis" id="ordenesAnalisis">
-                        <option value="analisis1">Análisis 1</option>
-                        <option value="analisis2">Análisis 2</option>
-                        <option value="analisis3">Análisis 3</option>
-                    </select>
-                </article>
-                <input type="submit" id="ordenesEnviar" value="Enviar">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <article>
+                        <label for="nombre" id="ordenesNombrelbl">Nombre:</label>
+                        <input type="text" id="ordenesNombreinp" name="nombreCompleto"
+                            placeholder="Tu nombre completo aquí">
+                    </article>
+                    <article>
+                        <label for="documento">Documento:</label>
+                        <input type="text" id="ordenesDocumento" name="documento"
+                            placeholder="Tu número de documento aquí">
+                    </article>
+                    <article>
+                        <label for="fecha" id="ordenesFechalbl">Fecha:</label>
+                        <input type="date" name="fecha" id="ordenesFechainp">
+                    </article>
+                    <article>
+                        <label for="analisis" id="ordenesAnalisislbl">Análisis:</label>
+                        <select name="analisis" id="ordenesAnalisis">
+                            <option value="analisis1">Análisis 1</option>
+                            <option value="analisis2">Análisis 2</option>
+                            <option value="analisis3">Análisis 3</option>
+                        </select>
+                    </article>
+                    <input type="submit" id="ordenesEnviar" value="Enviar">
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="img-fluid" id="ordenesImg1"
+                        src="../multimedia/national-cancer-institute-uVnRa6mOLOM-unsplash.jpg"
+                        alt="Ordenes de LAB Health. Foto de https://unsplash.com/es/@amplitudemagazin">
+                </div>
             </div>
-            <div>
-                <img src="../multimedia/national-cancer-institute-uVnRa6mOLOM-unsplash.jpg"
-                    alt="Ordenes de LAB Health. Foto de https://unsplash.com/es/@amplitudemagazin">
-            </div>
-        </section>
+        </div>
 
     </main>
 

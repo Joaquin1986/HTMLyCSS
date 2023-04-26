@@ -1,0 +1,31 @@
+ // RESET
+
+/* seteos iniciales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* seteos generales */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'SourceSansPro';
+    line-height: 150%;
+    & p {
+        color: $mainColor;
+        font-size: 20px;
+    }
+    
+    & h2{
+        color: $mainColor !important;
+    }
+    
+    & h3{
+        color: $mainColor !important;
+    }
+}
