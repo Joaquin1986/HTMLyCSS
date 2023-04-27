@@ -188,6 +188,7 @@ footer img:hover {
 #gridreginfo button:hover {
   background-color: #646464;
   border-color: #646464;
+  color: #eeecec;
 }
 
 .div-analisis img, .div-tecnologia img, .div-award img {
@@ -259,6 +260,44 @@ footer img:hover {
   margin-bottom: 50px;
 }
 
+#ordenesDocumento {
+  margin-top: 30px;
+  padding-left: 5.5%;
+}
+
+#ordenesNombrelbl {
+  margin-top: 30px;
+  padding-left: 5.5%;
+}
+
+#ordenesFechalbl {
+  margin-top: 30px;
+  padding-left: 9%;
+}
+
+#ordenesFechainp {
+  color: #444444;
+}
+
+#ordenesAnalisislbl {
+  margin-top: 30px;
+  padding-left: 6.5%;
+}
+
+#ordenesAnalisis {
+  color: #444444;
+}
+
+.ordenesEnviar {
+  margin-left: 20%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 30px;
+  background-color: #444444;
+  border-color: #444444;
+  color: #eeecec;
+}
+
 /* seteos de staff */
 #staffImg3 {
   margin-bottom: 50px;
@@ -282,19 +321,30 @@ footer img:hover {
 
 /* seteos de contacto */
 .contactoNombrelbl {
-  margin-left: 16%;
+  margin-top: 30px;
+  padding-left: 16%;
 }
 
 .contactoDocumento {
-  margin-left: 11%;
+  margin-top: 30px;
+  padding-left: 11%;
 }
 
 .contactoTelefono {
-  margin-left: 16%;
+  margin-top: 30px;
+  padding-left: 16%;
+}
+
+.contactoMotivo {
+  margin-top: 30px;
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: center;
 }
 
 .recibirInfolbl {
-  margin-left: 30%;
+  margin-top: 30px;
+  padding-left: 20%;
 }
 
 .recibirInfoinp {
@@ -304,10 +354,15 @@ footer img:hover {
   width: 20px;
 }
 
+.contactoNosConoce {
+  margin-top: 30px;
+  padding-left: 0%;
+}
+
 .nosConoceSi {
   position: relative;
   left: 57%;
-  top: -20px;
+  top: -45px;
   height: 20px;
   width: 20px;
 }
@@ -315,39 +370,46 @@ footer img:hover {
 .nosConoceSiInp {
   position: relative;
   left: 48%;
-  top: -20px;
+  top: -45px;
   height: 20px;
   width: 20px;
 }
 
 .nosConoceNo {
   position: relative;
-  left: 68%;
-  top: -20px;
+  left: 60%;
+  top: -45px;
   height: 20px;
   width: 20px;
 }
 
 .nosConoceNoInp {
   position: relative;
-  left: 58%;
-  top: -20px;
+  left: 50%;
+  top: -45px;
   height: 20px;
   width: 20px;
 }
 
 .contactoDetalle {
   position: relative;
-  left: 9%;
+  left: 0%;
   top: 118%;
 }
 
 .contactoFormulario textarea {
-  margin-left: 30%;
+  margin-top: 30px;
+  padding-left: 0%;
 }
 
 .contactoEnviar {
-  margin-left: 30%;
+  margin-top: 40px;
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-left: 60px;
+  background-color: #444444;
+  border-color: #444444;
+  color: #eeecec;
 }
 
 #contactoImg1 {

@@ -41,8 +41,8 @@
     margin-right: 20px;
     transition: 0.4s;
     &:hover {
-        background-color: $thirdColor;
-        border-color: $thirdColor;
+        @include colors($thirdColor,$thirdColor,$sixthColor); 
+
     }
 }
 
@@ -70,15 +70,11 @@
 
 
 .colsubmit .btn {
-    background-color: $fifthColor;
-    border-color: $fifthColor;
-    color: $mainColor;          
+    @include colors($fifthColor,$fifthColor,$mainColor);       
     transition: 0.4s;
     margin-left: 30px;
     &:hover {
-        background-color: $sixthColor;  
-        border-color: $sixthColor;
-        color: $mainColor;
+        @include colors($sixthColor,$sixthColor,$mainColor);     
     }
 }
 

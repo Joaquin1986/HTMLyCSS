@@ -1,6 +1,41 @@
 /* seteos de ordenes */
 
+
 #ordenesImg1 {
     margin-bottom: 50px;
 }
 
+#ordenesDocumento{
+    margin-top: 30px;
+    padding-left: 5.5%;
+}
+#ordenesNombrelbl {
+    margin-top: 30px;
+    padding-left: 5.5%;
+}
+
+#ordenesFechalbl {
+    margin-top: 30px;
+    padding-left: 9%;
+}
+
+#ordenesFechainp{
+    color:$mainColor;
+}
+
+#ordenesAnalisislbl {
+    @include formSpace (30px,6.5%);
+ 
+}
+
+#ordenesAnalisis{
+    color:$mainColor;
+}
+
+.ordenesEnviar {
+    margin-left: 20%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 30px;
+    @include colors ($mainColor,$mainColor,$sixthColor)
+}

@@ -1,0 +1,10 @@
+@mixin colors($backcolor,$bordercolor,$textcolor){
+    background-color: $backcolor;  
+    border-color: $bordercolor;
+    color: $textcolor;
+}
+
+@mixin formSpace ($marginTop,$paddingLeft){
+    margin-top: $marginTop;
+    padding-left: $paddingLeft;
+}

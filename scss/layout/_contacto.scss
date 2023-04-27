@@ -1,19 +1,26 @@
 /* seteos de contacto */
 
 .contactoNombrelbl{
-    margin-left: 16%;
+    @include formSpace(30px,16%);
+    
 }
 
 .contactoDocumento{
-    margin-left: 11%;
+    @include formSpace(30px,11%);
 }
 
 .contactoTelefono{
-    margin-left: 16%;
+    @include formSpace(30px,16%);
+}
+
+.contactoMotivo{
+    @include formSpace(30px,7%);
+    padding-right: 7%;
+    text-align: center;
 }
 
 .recibirInfolbl{
-    margin-left: 30%;
+    @include formSpace(30px,20%);
 }
 
 .recibirInfoinp{
@@ -23,10 +30,14 @@
     width: 20px;
 }
 
+.contactoNosConoce{
+    @include formSpace(30px,0%);
+}
+
 .nosConoceSi{
     position: relative;
     left:57%;
-    top:-20px;
+    top:-45px;
     height: 20px;
     width: 20px;  
 }
@@ -34,39 +45,45 @@
 .nosConoceSiInp{
     position: relative;
     left:48%;
-    top:-20px;
+    top:-45px;
     height: 20px;
     width: 20px;
 }
 
 .nosConoceNo{
     position: relative;
-    left:68%;
-    top:-20px;
+    left:60%;
+    top:-45px;
     height: 20px;
     width: 20px;
 }
 
 .nosConoceNoInp{
     position: relative;
-    left:58%;
-    top:-20px;
+    left:50%;
+    top:-45px;
     height: 20px;
     width: 20px;
 }
 
+
 .contactoDetalle{
     position: relative  ;
-    left:9%;
+    left:0%;
     top:118%;
+    
 }
 
 .contactoFormulario textarea{
-    margin-left: 30%;
+    @include formSpace(30px,0%);
+   
 }
 
 .contactoEnviar{
-    margin-left: 30%;
+    @include formSpace(40px,30%);
+    padding-right: 30%;
+    margin-left: 60px;
+    @include colors ($mainColor,$mainColor,$sixthColor);
 }
 
 #contactoImg1{
