@@ -13,10 +13,11 @@
 }
 
 .staffImg {
-    transition: 0.5s;
-    filter:grayscale(100%);
-    &:hover{
-        filter: grayscale(0%);
+    & img {
+        @include imageEffect;
+        &:hover{
+            filter: grayscale(0%) blur(0px);
+        }
     }
      
 }

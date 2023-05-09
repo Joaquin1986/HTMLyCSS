@@ -1,21 +1,29 @@
 //BOTON DE WHATSAPP
 
 .whatsappBtn {
-    position:sticky;
+    z-index: 90;
+    position: sticky;
     left: 94%;
     top: 80%;
+    filter: blur(1px);
     height: 55px;
     width: 55px;
+    filter: blur(85%);
+    transition: 0.5s;
+
+    &:hover{
+        filter: blur(0px);
+    }
 
     & img {
         border: 0px solid;
         border-radius: 80px;
         width: 60px;
-        transition: 0.4s;
-        filter:brightness(50%);
+        transition: 0.5s;
+        filter: brightness(50%);
 
         &:hover {
-            filter:brightness(100%);
+            filter: brightness(100%);
         }
     }
 }

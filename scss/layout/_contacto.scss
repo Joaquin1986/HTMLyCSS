@@ -1,92 +1,46 @@
 /* seteos de contacto */
 
-.contactoNombrelbl{
-    @include formSpace(30px,16%);
-    
-}
-
-.contactoDocumento{
-    @include formSpace(30px,11%);
-}
-
-.contactoTelefono{
-    @include formSpace(30px,16%);
-}
-
-.contactoMotivo{
-    @include formSpace(30px,7%);
-    padding-right: 7%;
-    text-align: center;
-}
-
-.recibirInfolbl{
-    @include formSpace(30px,20%);
-}
-
-.recibirInfoinp{
-    position: relative;
-    left:2%;
-    height: 20px;
-    width: 20px;
-}
-
-.contactoNosConoce{
-    @include formSpace(30px,0%);
-}
-
-.nosConoceSi{
-    position: relative;
-    left:57%;
-    top:-45px;
-    height: 20px;
-    width: 20px;  
-}
-
-.nosConoceSiInp{
-    position: relative;
-    left:48%;
-    top:-45px;
-    height: 20px;
-    width: 20px;
-}
-
-.nosConoceNo{
-    position: relative;
-    left:60%;
-    top:-45px;
-    height: 20px;
-    width: 20px;
-}
-
-.nosConoceNoInp{
-    position: relative;
-    left:50%;
-    top:-45px;
-    height: 20px;
-    width: 20px;
+.contactoNosConoce {
+    @include formSpace(10px, 0%);
 }
 
 
-.contactoDetalle{
-    position: relative  ;
-    left:0%;
-    top:118%;
-    
+#flexCheckChecked,
+#contactoConoceSi,
+#contactoConoceNo {
+    transition: 0.4s;
+    @include colors ($sixthColor, $mainColor, $sixthColor);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:checked {
+        @include colors ($thirdColor, $thirdColor, $sixthColor);
+    }
 }
 
-.contactoFormulario textarea{
-    @include formSpace(30px,0%);
-   
+#contactoRecibirInfo {
+    @include formSpace(20px, 5px);
+    margin-top: 20px;
+    margin-left: 5px;
 }
 
-.contactoEnviar{
-    @include formSpace(40px,30%);
-    padding-right: 30%;
-    margin-left: 60px;
-    @include colors ($mainColor,$mainColor,$sixthColor);
+.contactoEnviar {
+    & .btn {
+        @include buildSubmit;
+
+        &:hover {
+            @include colors ($thirdColor, $thirdColor, $sixthColor);
+        }
+    }
 }
 
-#contactoImg1{
-    margin-bottom: 50px;
+.contactoImg  {
+    & img {
+        @include imageEffect;
+        &:hover{
+            filter: grayscale(0%) blur(0px);
+        }
+    }
+     
 }
-

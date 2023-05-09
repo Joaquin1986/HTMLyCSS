@@ -1,31 +1,63 @@
  // RESET
 
-/* seteos iniciales */
-* {
-    margin: 0;
-    padding: 0;
-}
+ /* seteos iniciales */
+ * {
+     margin: 0;
+     padding: 0;
+ }
 
-/* seteos generales */
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
+ /* seteos generales */
 
-body {
-    font-family: 'SourceSansPro';
-    line-height: 150%;
-    & p {
-        color: $mainColor;
-        font-size: 20px;
-    }
-    
-    & h2{
-        color: $mainColor !important;
-    }
-    
-    & h3{
-        color: $mainColor !important;
-    }
-}
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+ }
+
+ body {
+     font-family: 'SourceSansPro';
+     line-height: 150%;
+
+     & p,
+     & label,
+     & input,
+     & select,
+     & textarea {
+         color: $mainColor !important;
+         font-size: 20px !important;
+     }
+
+     & input,
+     & select,
+     & textarea {
+         border-color: $fourthColor !important;
+         color: $fourthColor !important;
+         transition: 0.5s;
+
+         &:focus,
+         &:active {
+             border-color: $mainColor !important;
+             color: $mainColor !important;
+             box-shadow: 2px 2px $mainColor !important;
+         }
+
+         &:hover {
+             border-color: $fourthColor !important;
+             box-shadow: 2px 2px $fourthColor !important;
+         }
+     }
+
+     & h2 {
+         color: $mainColor !important;
+     }
+
+     & h3 {
+         color: $mainColor !important;
+     }
+
+     & textarea {
+         resize: none;
+     }
+
+
+ }

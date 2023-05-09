@@ -54,10 +54,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="pages/staff.html">Staff</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" id="menuContacto">
                                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
+                        <div class="col-12">
+                            <img id="imglogo" src="multimedia/logolab.jpg" alt="Logo Health Lab">
+                            <h3 class="tituloMenu">health</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,21 +140,19 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="ubicacion">
-                        <article>
-                            <h2>Ubicación accesible</h2>
-                            <p>
-                                Estamos ubicados en una zona de fácil acceso para nuestros pacientes. Nuestro
-                                laboratorio LabHealth se encuentra en el centro de la ciudad, cerca de paradas de
-                                transporte público y con amplias opciones de estacionamiento. Además, nuestras
-                                instalaciones están adaptadas para garantizar la comodidad y accesibilidad de todas las
-                                personas, incluyendo aquellas con necesidades especiales.
-                            </p>
-                        </article>
+                        <h2>Ubicación accesible</h2>
+                        <p>
+                            Estamos ubicados en una zona de fácil acceso para nuestros pacientes. Nuestro
+                            laboratorio LabHealth se encuentra en el centro de la ciudad, cerca de paradas de
+                            transporte público y con amplias opciones de estacionamiento. Además, nuestras
+                            instalaciones están adaptadas para garantizar la comodidad y accesibilidad de todas las
+                            personas, incluyendo aquellas con necesidades especiales.
+                        </p>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <div class="mapa">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2876.9669896016244!2d-56.165266631975214!3d-34.894538731923014!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1678939969950!5m2!1ses-419!2suy"
@@ -172,18 +174,20 @@
                             de
                             análisis clínicos en general, puedes suscribirte a nuestro boletín:
                         </p>
-                        <form action="" class="form-boletin">
+                        <form action="">
                             <div class="formbox">
-                                <div class="colnombre">
+                                <div class="col-12 col-sm-4">
                                     <input type="text" class="form-control" name="nombre" id="formnombre"
                                         placeholder="Tu nombre" aria-label="Tu nombre">
                                 </div>
-                                <div class="colemail">
+                                <div class="col-12 col-sm-4">
                                     <input type="text" class="form-control" name="email" id="formemail"
                                         placeholder="E-mail" aria-label="E-mail">
                                 </div>
-                                <div class="colsubmit">
-                                    <input type="submit" class="btn btn-primary" value="Suscribirme">
+                                <div class="col-12 col-sm-4">
+                                    <div class="indexEnviar">
+                                        <input type="submit" class="btn btn-primary" id="formenviar">
+                                    </div>
                                 </div>
                             </div>
                         </form>

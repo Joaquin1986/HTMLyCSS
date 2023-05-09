@@ -89,34 +89,31 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <article>
-                        <label for="nombre" id="ordenesNombrelbl">Nombre:</label>
-                        <input type="text" id="ordenesNombreinp" name="nombreCompleto"
+                    <form action="">
+                        <label for="nombreCompleto" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" name="nombreCompleto"
                             placeholder="Tu nombre completo aquí">
-                    </article>
-                    <article>
-                        <label for="documento">Documento:</label>
-                        <input type="text" id="ordenesDocumento" name="documento"
+                        <label for="documento" class="form-label">Documento:</label>
+                        <input type="text" class="form-control" name="documento"
                             placeholder="Tu número de documento aquí">
-                    </article>
-                    <article>
-                        <label for="fecha" id="ordenesFechalbl">Fecha:</label>
-                        <input type="date" name="fecha" id="ordenesFechainp">
-                    </article>
-                    <article>
-                        <label for="analisis" id="ordenesAnalisislbl">Análisis:</label>
-                        <select name="analisis" id="ordenesAnalisis">
+                        <label for="fecha" class="form-label">Fecha:</label>
+                        <input type="date" name="fecha" class="form-control">
+                        <label for="analisis" class="form-label">Análisis:</label>
+                        <select name="analisis" class="form-select" id="ordenesAnalisis">
                             <option value="analisis1">Análisis 1</option>
                             <option value="analisis2">Análisis 2</option>
                             <option value="analisis3">Análisis 3</option>
                         </select>
-                    </article>
-                    <input type="submit" class="ordenesEnviar" value="Enviar">
+                        <div class="ordenesEnviar">
+                            <input type="submit" class="btn btn-primary" value="Enviar">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img class="img-fluid" id="ordenesImg1"
-                        src="../multimedia/national-cancer-institute-uVnRa6mOLOM-unsplash.jpg"
-                        alt="Ordenes de LAB Health. Foto de https://unsplash.com/es/@amplitudemagazin">
+                    <div class="ordenesImg">
+                        <img class="img-fluid" src="../multimedia/national-cancer-institute-uVnRa6mOLOM-unsplash.jpg"
+                            alt="Ordenes de LAB Health. Foto de https://unsplash.com/es/@amplitudemagazin">
+                    </div>
                 </div>
             </div>
         </div>

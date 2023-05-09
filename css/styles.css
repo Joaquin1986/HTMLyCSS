@@ -15,15 +15,32 @@ body {
   font-family: "SourceSansPro";
   line-height: 150%;
 }
-body p {
-  color: #444444;
-  font-size: 20px;
+body p, body label, body input, body select, body textarea {
+  color: #444444 !important;
+  font-size: 20px !important;
+}
+body input, body select, body textarea {
+  border-color: #afafaf !important;
+  color: #afafaf !important;
+  transition: 0.5s;
+}
+body input:focus, body input:active, body select:focus, body select:active, body textarea:focus, body textarea:active {
+  border-color: #444444 !important;
+  color: #444444 !important;
+  box-shadow: 2px 2px #444444 !important;
+}
+body input:hover, body select:hover, body textarea:hover {
+  border-color: #afafaf !important;
+  box-shadow: 2px 2px #afafaf !important;
 }
 body h2 {
   color: #444444 !important;
 }
 body h3 {
   color: #444444 !important;
+}
+body textarea {
+  resize: none;
 }
 
 /* fuente general */
@@ -37,15 +54,23 @@ body h3 {
   src: url("../fonts/ShadowsIntoLight-Regular.ttf");
 }
 /* seteos de navbar, logo y menu */
-#imglogo {
+.navbar {
+  background-color: #444444;
+  padding-bottom: 200px;
+}
+.navbar .container-fluid {
+  max-height: 100px;
+  overflow: hidden !important;
+  scrollbar-width: none !important;
+}
+.navbar .container-fluid #imglogo {
   width: 200px;
   padding-left: 10px;
   margin-left: 8px;
   margin-bottom: 0%;
   margin-top: 1%;
 }
-
-.tituloH1 {
+.navbar .container-fluid .tituloH1 {
   position: relative;
   color: #ebebeb;
   font-family: "ShadowsIntoLight";
@@ -53,38 +78,30 @@ body h3 {
   top: -70px;
   font-size: 34pt;
 }
-
-.navbar {
-  background-color: #444444;
-  padding-bottom: 200px;
-}
-
-.container-fluid {
+.navbar .container-fluid .navbar-brand {
   max-height: 100px;
 }
-
-.navbar-brand {
-  max-height: 100px;
-}
-
-.navbar-toggler {
+.navbar .container-fluid .navbar-toggler {
   position: relative;
   transition: 0.4s;
 }
-
-.navbar-toggler:hover,
-:active,
-:focus {
+.navbar .container-fluid .navbar-toggler:hover, .navbar .container-fluid .navbar-toggler:active, .navbar .container-fluid .navbar-toggler:focus {
   border-color: #afafaf;
 }
-
-.offcanvas-header,
-.offcanvas-body {
+.navbar .container-fluid .offcanvas-header, .navbar .container-fluid .offcanvas-body {
   background-color: #444444;
 }
-
-.logo {
-  width: 100%;
+.navbar .container-fluid .offcanvas-body .navbar-nav {
+  margin-bottom: 30px !important;
+}
+.navbar .container-fluid .offcanvas-body .tituloMenu {
+  position: relative;
+  color: #ebebeb !important;
+  font-family: "ShadowsIntoLight";
+  left: 210px;
+  top: -70px;
+  font-size: 34pt;
+  width: 100px;
 }
 
 /* seteos de pie de pagina */
@@ -102,9 +119,9 @@ footer h2 {
 }
 
 footer p {
-  color: #ebebeb;
+  color: #ebebeb !important;
   font-family: "SourceSansPro";
-  font-size: 8pt;
+  font-size: 10pt !important;
   margin-bottom: 0px;
 }
 
@@ -121,17 +138,24 @@ footer img:hover {
 }
 
 .whatsappBtn {
+  z-index: 90;
   position: sticky;
   left: 94%;
   top: 80%;
+  filter: blur(1px);
   height: 55px;
   width: 55px;
+  filter: blur(85%);
+  transition: 0.5s;
+}
+.whatsappBtn:hover {
+  filter: blur(0px);
 }
 .whatsappBtn img {
   border: 0px solid;
   border-radius: 80px;
   width: 60px;
-  transition: 0.4s;
+  transition: 0.5s;
   filter: brightness(50%);
 }
 .whatsappBtn img:hover {
@@ -146,6 +170,13 @@ footer img:hover {
 /* seteos de index */
 .divimg1 img {
   margin-top: 30px;
+  filter: grayscale(70%) blur(0.75px);
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.divimg1 img:hover {
+  filter: grayscale(0%) blur(0px);
 }
 
 .div-tecnologia,
@@ -158,6 +189,7 @@ footer img:hover {
 .mapa {
   margin-top: 10px;
   margin-bottom: 50px;
+  max-height: 100%;
 }
 .mapa iframe {
   width: 100%;
@@ -169,61 +201,68 @@ footer img:hover {
   height: 280px;
 }
 
-.boletin {
-  margin-bottom: 50px;
-}
-.boletin form {
-  background-color: #444444;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 #gridreginfo button {
   background-color: #444444;
   margin-right: 20px;
   transition: 0.4s;
 }
 #gridreginfo button:hover {
-  background-color: #646464;
-  border-color: #646464;
-  color: #eeecec;
+  background-color: #646464 !important;
+  border-color: #646464 !important;
+  color: #eeecec !important;
 }
 
-.div-analisis img, .div-tecnologia img, .div-award img {
+.div-analisis img,
+.div-tecnologia img,
+.div-award img {
   width: 100px;
   transition: 0.5s;
 }
-.div-analisis img:hover, .div-tecnologia img:hover, .div-award img:hover {
+.div-analisis img:hover,
+.div-tecnologia img:hover,
+.div-award img:hover {
   width: 115px;
 }
 
 .formbox {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.colnombre .form-control {
-  margin-left: 60px;
+.boletin {
+  margin-bottom: 50px;
 }
-
-.colemail .form-control {
-  margin-left: 70px;
+.boletin form {
+  background-color: #444444;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-
-.colsubmit .btn {
-  background-color: #c0c0c0;
-  border-color: #c0c0c0;
-  color: #444444;
-  transition: 0.4s;
+.boletin form #formnombre {
   margin-left: 30px;
 }
-.colsubmit .btn:hover {
-  background-color: #eeecec;
-  border-color: #eeecec;
-  color: #444444;
+.boletin form #formemail {
+  margin-left: 50px;
+}
+.boletin form #formenviar {
+  margin-top: 20px;
+  margin-left: 0%;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  background-color: #c0c0c0 !important;
+  border-color: #c0c0c0 !important;
+  color: #444444 !important;
+  transition: 0.4s;
+}
+.boletin form #formenviar:hover {
+  background-color: #eeecec !important;
+  border-color: #eeecec !important;
+  color: #444444 !important;
 }
 
 .descarga-app img {
@@ -247,12 +286,14 @@ footer img:hover {
   margin-bottom: 50px;
 }
 
-.estudiosImg {
+.estudiosImg img {
+  filter: grayscale(70%) blur(0.75px);
   transition: 0.5s;
-  filter: grayscale(100%);
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
-.estudiosImg:hover, .estudiosImg:focus {
-  filter: grayscale(0%);
+.estudiosImg img:hover {
+  filter: grayscale(0%) blur(0px);
 }
 
 /* seteos de ordenes */
@@ -281,21 +322,38 @@ footer img:hover {
 
 #ordenesAnalisislbl {
   margin-top: 30px;
-  padding-left: 6.5%;
+  margin-left: 6.5%;
 }
 
 #ordenesAnalisis {
   color: #444444;
 }
 
-.ordenesEnviar {
-  margin-left: 20%;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-top: 30px;
-  background-color: #444444;
-  border-color: #444444;
-  color: #eeecec;
+.ordenesEnviar .btn {
+  margin-top: 40px;
+  margin-left: 0%;
+  padding-left: 45%;
+  padding-right: 45%;
+  margin-bottom: 30px;
+  background-color: #444444 !important;
+  border-color: #444444 !important;
+  color: #eeecec !important;
+  transition: 0.4s;
+}
+.ordenesEnviar .btn:hover {
+  background-color: #646464 !important;
+  border-color: #646464 !important;
+  color: #eeecec !important;
+}
+
+.ordenesImg img {
+  filter: grayscale(70%) blur(0.75px);
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.ordenesImg img:hover {
+  filter: grayscale(0%) blur(0px);
 }
 
 /* seteos de staff */
@@ -311,181 +369,263 @@ footer img:hover {
   text-align: center;
 }
 
-.staffImg {
+.staffImg img {
+  filter: grayscale(70%) blur(0.75px);
   transition: 0.5s;
-  filter: grayscale(100%);
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
-.staffImg:hover {
-  filter: grayscale(0%);
+.staffImg img:hover {
+  filter: grayscale(0%) blur(0px);
 }
 
 /* seteos de contacto */
-.contactoNombrelbl {
-  margin-top: 30px;
-  padding-left: 16%;
-}
-
-.contactoDocumento {
-  margin-top: 30px;
-  padding-left: 11%;
-}
-
-.contactoTelefono {
-  margin-top: 30px;
-  padding-left: 16%;
-}
-
-.contactoMotivo {
-  margin-top: 30px;
-  padding-left: 7%;
-  padding-right: 7%;
-  text-align: center;
-}
-
-.recibirInfolbl {
-  margin-top: 30px;
-  padding-left: 20%;
-}
-
-.recibirInfoinp {
-  position: relative;
-  left: 2%;
-  height: 20px;
-  width: 20px;
-}
-
 .contactoNosConoce {
-  margin-top: 30px;
-  padding-left: 0%;
+  margin-top: 10px;
+  margin-left: 0%;
 }
 
-.nosConoceSi {
-  position: relative;
-  left: 57%;
-  top: -45px;
-  height: 20px;
-  width: 20px;
+#flexCheckChecked,
+#contactoConoceSi,
+#contactoConoceNo {
+  transition: 0.4s;
+  background-color: #eeecec !important;
+  border-color: #444444 !important;
+  color: #eeecec !important;
+}
+#flexCheckChecked:hover, #flexCheckChecked:focus, #flexCheckChecked:active, #flexCheckChecked:checked,
+#contactoConoceSi:hover,
+#contactoConoceSi:focus,
+#contactoConoceSi:active,
+#contactoConoceSi:checked,
+#contactoConoceNo:hover,
+#contactoConoceNo:focus,
+#contactoConoceNo:active,
+#contactoConoceNo:checked {
+  background-color: #646464 !important;
+  border-color: #646464 !important;
+  color: #eeecec !important;
 }
 
-.nosConoceSiInp {
-  position: relative;
-  left: 48%;
-  top: -45px;
-  height: 20px;
-  width: 20px;
+#contactoRecibirInfo {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
-.nosConoceNo {
-  position: relative;
-  left: 60%;
-  top: -45px;
-  height: 20px;
-  width: 20px;
-}
-
-.nosConoceNoInp {
-  position: relative;
-  left: 50%;
-  top: -45px;
-  height: 20px;
-  width: 20px;
-}
-
-.contactoDetalle {
-  position: relative;
-  left: 0%;
-  top: 118%;
-}
-
-.contactoFormulario textarea {
-  margin-top: 30px;
-  padding-left: 0%;
-}
-
-.contactoEnviar {
+.contactoEnviar .btn {
   margin-top: 40px;
-  padding-left: 30%;
-  padding-right: 30%;
-  margin-left: 60px;
-  background-color: #444444;
-  border-color: #444444;
-  color: #eeecec;
+  margin-left: 0%;
+  padding-left: 45%;
+  padding-right: 45%;
+  margin-bottom: 30px;
+  background-color: #444444 !important;
+  border-color: #444444 !important;
+  color: #eeecec !important;
+  transition: 0.4s;
+}
+.contactoEnviar .btn:hover {
+  background-color: #646464 !important;
+  border-color: #646464 !important;
+  color: #eeecec !important;
 }
 
-#contactoImg1 {
-  margin-bottom: 50px;
+.contactoImg img {
+  filter: grayscale(70%) blur(0.75px);
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contactoImg img:hover {
+  filter: grayscale(0%) blur(0px);
 }
 
 /* media queries */
 @media (max-width: 250px) {
   #imglogo {
-    width: 70px;
+    width: 70px !important;
   }
   .tituloH1 {
-    left: 70px;
-    top: -27px;
-    font-size: 14pt;
+    left: 70px !important;
+    top: -27px !important;
+    font-size: 14pt !important;
   }
   .container-fluid {
-    max-height: 45px;
+    max-height: 45px !important;
   }
   .navbar-toggler {
-    top: -15px;
-    max-height: 25px;
-    max-width: 35px;
+    top: -15px !important;
+    max-height: 25px !important;
+    max-width: 35px !important;
   }
   .navbar-toggler-icon {
-    right: 5px;
-    top: -7px;
-    max-width: 20px;
+    right: 5px !important;
+    top: -7px !important;
+    max-width: 20px !important;
+  }
+}
+@media (max-width: 310px) {
+  #imglogo {
+    width: 120px !important;
+    z-index: 2 !important;
+  }
+  .container-fluid {
+    max-height: 65px !important;
+    z-index: 1 !important;
+  }
+  .navbar-toggler {
+    z-index: 10 !important;
+    background-color: #444444 !important;
+  }
+  .tituloMenu {
+    left: 67px !important;
+    top: -18px !important;
+    font-size: 18pt !important;
+    z-index: 3 !important;
+  }
+  .whatsappBtn {
+    top: 70% !important;
+  }
+  .whatsappBtn img {
+    height: 45px !important;
+    width: 45px !important;
+  }
+  .h2titulo {
+    margin-top: 50px !important;
+  }
+  #formenviar {
+    margin-left: 20px !important;
+  }
+  .contactoEnviar .btn {
+    margin-left: 0px !important;
   }
 }
 @media (max-width: 360px) {
-  #imglogo {
-    width: 100px;
-  }
-  .tituloH1 {
-    left: 100px;
-    top: -35px;
-    font-size: 16pt;
-  }
   .container-fluid {
-    max-height: 55px;
+    max-height: 55px !important;
   }
   .navbar-toggler {
-    top: -15px;
-    max-height: 30px;
-    max-width: 40px;
+    top: -15px !important;
+    max-height: 30px !important;
+    max-width: 40px !important;
   }
   .navbar-toggler-icon {
-    position: relative;
-    right: 5px;
-    top: -5px;
-    max-width: 25px;
+    position: relative !important;
+    right: 5px !important;
+    top: -5px !important;
+    max-width: 25px !important;
+  }
+  .contactoEnviar .btn {
+    margin-left: 20px !important;
+    padding-left: 30% !important;
+    padding-right: 30% !important;
+  }
+  .ordenesEnviar .btn {
+    margin-left: 20px !important;
+    padding-left: 30% !important;
+    padding-right: 30% !important;
+  }
+  footer img {
+    max-width: 40px;
+  }
+  footer img:hover {
+    max-width: 50px;
+  }
+  .descarga-app img {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 500px) {
   #imglogo {
-    width: 150px;
-    padding-left: 0px;
-    margin-left: 0px;
-    margin-bottom: 0%;
-    margin-top: 0%;
+    width: 150px !important;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+    margin-bottom: 0% !important;
+    margin-top: 0% !important;
   }
   .tituloH1 {
-    left: 153px;
-    top: -52px;
-    font-size: 24pt;
+    left: 153px !important;
+    top: -52px !important;
+    font-size: 24pt !important;
   }
   .container-fluid {
-    max-height: 75px;
+    max-height: 75px !important;
   }
   .navbar-toggler {
-    top: -15px;
+    top: -15px !important;
+  }
+  .tituloMenu {
+    left: 153px !important;
+    top: -52px !important;
+    font-size: 24pt !important;
+  }
+  .whatsappBtn {
+    left: 85% !important;
+    top: 75% !important;
   }
   .whatsappBtn img {
-    height: 40px;
-    width: 40px;
+    height: 50px !important;
+    width: 50px !important;
+  }
+  p {
+    font-size: 10pt !important;
+  }
+  .h2titulo {
+    margin-top: 70px !important;
+    font-size: 18pt !important;
+  }
+  .div-tecnologia,
+  .div-analisis,
+  .div-award {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  .ubicacion,
+  .mapa,
+  .boletin {
+    margin-top: 30px !important;
+    text-align: center !important;
+  }
+  .contactoEnviar .btn {
+    padding-left: 40% !important;
+    padding-right: 40% !important;
+    margin-bottom: 10px !important;
+  }
+  .ordenesEnviar .btn {
+    padding-left: 40% !important;
+    padding-right: 40% !important;
+    margin-bottom: 10px !important;
+  }
+  #ordenesImg1 {
+    margin-top: 20px !important;
+  }
+  footer h2 {
+    font-size: 11 pt !important;
+  }
+  footer p {
+    color: #ebebeb !important;
+    font-size: 8pt !important;
+  }
+}
+@media (max-width: 576px) {
+  #formnombre {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .boletin {
+    margin-bottom: 30px !important;
+  }
+  .boletin form {
+    background-color: #444444 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  .boletin form #formnombre {
+    margin-left: 15px !important;
+  }
+  .boletin form #formemail {
+    margin-left: 15px !important;
   }
 }
 @media (max-width: 768px) {
@@ -493,6 +633,17 @@ footer img:hover {
   .div-analisis img,
   .div-award img {
     width: 80px;
+  }
+  .h2titulo {
+    text-align: center;
+  }
+  .contactoEnviar {
+    margin-bottom: 30px;
+  }
+  .boletin form {
+    padding: 5px 40px 5px 10px;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
   }
 }
 @media (max-width: 992px) {
@@ -509,6 +660,15 @@ footer img:hover {
     top: 72%;
     height: 45px;
     width: 45px;
+  }
+  .boletin {
+    margin-left: 0px !important;
+  }
+  .boletin form #formnombre {
+    margin-left: 10px;
+  }
+  .boletin form #formemail {
+    margin-left: 20px;
   }
 }
 @media (min-width: 768px) {

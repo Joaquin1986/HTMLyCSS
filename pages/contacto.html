@@ -77,51 +77,51 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <article>
-                        <label for="nombre" class="contactoNombrelbl">Nombre:</label>
-                        <input type="text" class="contactoNombreinp" name="nombreCompleto"
+                    <form action="">
+                        <label for="nombreCompleto" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" name="nombreCompleto"
                             placeholder="Tu nombre completo aquí">
-                    </article>
-                    <article>
-                        <label for="documento" class="contactoDocumento">Documento:</label>
-                        <input type="text" name="documento" placeholder="Tu dirección de e-mail aquí">
-                    </article>
-                    <article>
-                        <label for="telefono" class="contactoTelefono">Teléfono:</label>
-                        <input type="text" name="telefono" placeholder="Tu número de teléfono aquí">
-                    </article>
-                    <article>
-                        <label for="motivo" class="contactoMotivolbl">Motivo del contacto:</label>
-                        <select name="motivo" class="contactoMotivo">
+                        <label for="documento" class="form-label">Documento:</label>
+                        <input type="text" class="form-control" name="documento"
+                            placeholder="Tu dirección de e-mail aquí">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="text" class="form-control" name="telefono"
+                            placeholder="Tu número de teléfono aquí">
+                        <label for="motivo" class="form-label">Motivo del contacto:</label>
+                        <select name="motivo" class="form-select" id="contactoMotivo">
                             <option value="consulta">Consulta</option>
-                            <option value="sugerencia">Sugerrencia</option>
+                            <option value="sugerencia">Sugerencia</option>
                             <option value="queja">Queja</option>
                         </select>
-                    </article>
-                    <article>
-                        <label for="contactoInfochk" class="recibirInfolbl">Quiero recibir información:</label>
-                        <input name="contactoInfochk" type="checkbox" checked="checked" class="recibirInfoinp">
-                    </article>
-                    <article>
+                        <div class="form-check" id="contactoRecibirInfo">
+                            <label class="form-check-label">Quiero recibir información</label>
+                            <input type="checkbox" class="form-check-input" value="" id="flexCheckChecked" checked>
+                        </div>
                         <p class="contactoNosConoce">¿Nos conoce por primera vez?</p>
-                        <label for="contactoConoceSi" class="nosConoceSi">Si</label>
-                        <input name="contactoConoceSi" type="radio" checked="checked" class="nosConoceSiInp">
-                        <label for="contactoConoceNo" class="nosConoceNo">No</label>
-                        <input name="contactoConoceNo" type="radio" class="nosConoceNoInp">
-                    </article>
-                    <article>
-                        <label for="detalle" class="contactoDetalle">Detalle:</label>
-                        <textarea name="detalle" rows="10" cols="50" placeholder="Tu mensaje aquí"></textarea>
-                    </article>
-                    <article>
-                        <input type="submit" class="contactoEnviar">
-                    </article>
+                        <div class="form-check">
+                            <label for="contactoConoceSi" class="form-check-label">Si</label>
+                            <input name="flexRadioDefault" type="radio" class="form-check-input" id="contactoConoceSi"
+                                checked>
+                        </div>
+                        <div class="form-check">
+                            <label for="contactoConoceNo" class="form-check-label">No</label>
+                            <input name="flexRadioDefault" type="radio" class="form-check-input" id="contactoConoceNo">
+                        </div>
+                        <label for="detalle" class="form-label">Detalle:</label>
+                        <textarea name="detalle" class="form-control" id="contactoDetalleTxt" rows="10"
+                            placeholder="Tu mensaje aquí"></textarea>
+                        <div class="contactoEnviar">
+                            <input type="submit" class="btn btn-primary">
+                        </div>
+                    </form>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img class="img-fluid" id="contactoImg1"
-                        src="../multimedia/amplitude-magazin-srXbJ1TAdhI-unsplash.jpg"
-                        alt="LAB Health. Imagen de https://unsplash.com/es/@amplitudemagazin">
+                    <div class="contactoImg">
+                        <img class="img-fluid" src="../multimedia/amplitude-magazin-srXbJ1TAdhI-unsplash.jpg"
+                            alt="LAB Health. Imagen de https://unsplash.com/es/@amplitudemagazin">
+                    </div>
                 </div>
+
             </div>
         </div>
     </main>

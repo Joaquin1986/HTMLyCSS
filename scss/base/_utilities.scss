@@ -1,10 +1,26 @@
-@mixin colors($backcolor,$bordercolor,$textcolor){
-    background-color: $backcolor;  
-    border-color: $bordercolor;
-    color: $textcolor;
+@mixin colors($backcolor, $bordercolor, $textcolor) {
+    background-color: $backcolor !important;
+    border-color: $bordercolor !important;
+    color: $textcolor !important;
 }
 
-@mixin formSpace ($marginTop,$paddingLeft){
+@mixin formSpace ($marginTop, $marginLeft) {
     margin-top: $marginTop;
-    padding-left: $paddingLeft;
+    margin-left: $marginLeft;
+}
+
+@mixin buildSubmit {
+    @include formSpace(40px, 0%);
+    padding-left: 45%;
+    padding-right: 45%;
+    margin-bottom: 30px;
+    @include colors ($mainColor, $mainColor, $sixthColor);
+    transition: 0.4s;
+}
+
+@mixin imageEffect{
+    filter: grayscale(70%) blur(.75px);
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }

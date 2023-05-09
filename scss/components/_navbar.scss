@@ -1,53 +1,71 @@
 //NAVBAR 
- 
- /* seteos de navbar, logo y menu */
 
-#imglogo {
-    width: 200px;
-    padding-left: 10px;
-    margin-left: 8px;
-    margin-bottom: 0%;
-    margin-top: 1%;
-}
-
-.tituloH1 {
-    position: relative;
-    color: $secondColor;
-    font-family: 'ShadowsIntoLight';
-    left: 210px;
-    top: -70px;
-    font-size: 34pt;
-}
+/* seteos de navbar, logo y menu */
 
 .navbar {
     background-color: $mainColor;
     padding-bottom: 200px;
-}
 
-.container-fluid {
-    max-height: 100px;
-}
 
-.navbar-brand {
-    max-height: 100px;
-}
+    & .container-fluid {
+        max-height: 100px;
+        overflow: hidden !important;
+        scrollbar-width: none !important;
 
-.navbar-toggler {
-    position: relative;
-    transition: 0.4s;
-}
+        & #imglogo {
+            width: 200px;
+            padding-left: 10px;
+            margin-left: 8px;
+            margin-bottom: 0%;
+            margin-top: 1%;
+        }
 
-.navbar-toggler:hover,
-:active,
-:focus {
-    border-color: $fourthColor;
-}
+        & .tituloH1 {
+            position: relative;
+            color: $secondColor;
+            font-family: 'ShadowsIntoLight';
+            left: 210px;
+            top: -70px;
+            font-size: 34pt;
+        }
 
-.offcanvas-header,
-.offcanvas-body {
-    background-color: $mainColor;
-}
+        & .navbar-brand {
+            max-height: 100px;
+        }
 
-.logo {
-    width: 100%;
+        & .navbar-toggler {
+            position: relative;
+            transition: 0.4s;
+
+            &:hover,
+            &:active,
+            &:focus {
+                border-color: $fourthColor;
+            }
+        }
+
+        & .offcanvas-header,
+        & .offcanvas-body {
+            background-color: $mainColor;
+        }
+
+        & .offcanvas-body {
+
+            & .navbar-nav {
+                margin-bottom: 30px !important;
+            }
+
+            & .tituloMenu {
+                position: relative;
+                color: $secondColor !important;
+                font-family: 'ShadowsIntoLight';
+                left: 210px;
+                top: -70px;
+                font-size: 34pt;
+                width: 100px;
+            }
+
+        }
+
+    }
 }

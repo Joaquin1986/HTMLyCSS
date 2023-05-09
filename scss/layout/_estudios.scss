@@ -4,11 +4,12 @@
     margin-bottom: 50px;
 }
 
-.estudiosImg {
-    transition: 0.5s;
-    filter:grayscale(100%);
-
-    &:hover, &:focus {
-        filter:grayscale(0%);
+.estudiosImg  {
+    & img {
+        @include imageEffect;
+        &:hover{
+            filter: grayscale(0%) blur(0px);
+        }
     }
+     
 }

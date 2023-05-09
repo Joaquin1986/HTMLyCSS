@@ -1,7 +1,15 @@
 /* seteos de index */
 
-.divimg1 img {
-    margin-top: 30px;
+.divimg1 {
+    & img {
+        margin-top: 30px;
+        @include imageEffect;
+
+        &:hover {
+            filter: grayscale(0%) blur(0px);
+        }
+    }
+
 }
 
 .div-tecnologia,
@@ -14,81 +22,103 @@
 .mapa {
     margin-top: 10px;
     margin-bottom: 50px;
+    max-height: 100%;
+
     & iframe {
         width: 100%;
         height: 250px;
         transition: 0.5s;
-        &:hover{
+
+        &:hover {
             width: 105%;
             height: 280px;
         }
     }
 }
 
-.boletin {
-    margin-bottom: 50px;
-        & form{
-            background-color: $mainColor;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-}
+
 
 #gridreginfo button {
     background-color: $mainColor;
     margin-right: 20px;
     transition: 0.4s;
+
     &:hover {
-        @include colors($thirdColor,$thirdColor,$sixthColor); 
+        @include colors($thirdColor, $thirdColor, $sixthColor);
 
     }
 }
 
-.div-analisis img, .div-tecnologia img, .div-award img{
+.div-analisis img,
+.div-tecnologia img,
+.div-award img {
     width: 100px;
     transition: 0.5s;
-    &:hover{
-        width:115px;
+
+    &:hover {
+        width: 115px;
     }
 }
 
 .formbox {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.colnombre .form-control {
-    margin-left: 60px;
-}
+.boletin {
+    margin-bottom: 50px;
 
-.colemail .form-control {
-    margin-left: 70px;
-}
+    & form {
+        background-color: $mainColor;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
 
+        & #formnombre {
+            margin-left: 30px;
+        }
 
-.colsubmit .btn {
-    @include colors($fifthColor,$fifthColor,$mainColor);       
-    transition: 0.4s;
-    margin-left: 30px;
-    &:hover {
-        @include colors($sixthColor,$sixthColor,$mainColor);     
+        & #formemail {
+            margin-left: 50px;
+        }
+
+        & #formenviar {
+            @include formSpace(20px, 0%);
+            padding-left: 25%;
+            padding-right: 25%;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            @include colors ($fifthColor, $fifthColor, $mainColor);
+            transition: 0.4s;
+
+            &:hover {
+                @include colors ($sixthColor, $sixthColor, $mainColor);
+            }
+
+        }
     }
 }
+
+
+
 
 .descarga-app img {
     width: 150px;
     margin-bottom: 50px;
-    transition:0.4s;
-    &:hover{
-        width:170px;
+    transition: 0.4s;
+
+    &:hover {
+        width: 170px;
     }
+
     &.googleplay {
         margin-top: 2px;
         width: 145px;
-        &:hover{
+
+        &:hover {
             width: 165px;
         }
     }
