@@ -45,11 +45,9 @@
         background-color: $mainColor !important;
     }
 
-    .tituloMenu {
+    .tituloH1 {
         left: 67px !important;
         top: -18px !important;
-        font-size: 18pt !important;
-        z-index: 3 !important;
     }
 
     .whatsappBtn {
@@ -79,13 +77,13 @@
 @media (max-width:360px) {
 
     .container-fluid {
-        max-height: 55px !important;
+        max-height: 55px;
     }
 
     .navbar-toggler {
-        top: -15px !important;
-        max-height: 30px !important;
-        max-width: 40px !important;
+        top: -15px;
+        max-height: 30px;
+        max-width: 40px;
     }
 
     .navbar-toggler-icon {
@@ -150,7 +148,7 @@
     }
 
     .navbar-toggler {
-        top: -15px !important;
+        top: -15px;
     }
 
     .tituloMenu {
@@ -160,22 +158,22 @@
     }
 
     .whatsappBtn {
-        left: 85% !important;
-        top: 75% !important;
+        left: 85%;
+        top: 75%;
 
         & img {
-            height: 50px !important;
-            width: 50px !important;
+            height: 50px;
+            width: 50px;
         }
     }
 
     p {
-        font-size: 10pt !important;
+        font-size: 10pt;
     }
 
     .h2titulo {
-        margin-top: 70px !important;
-        font-size: 18pt !important;
+        margin-top: 70px;
+        font-size: 18pt;
     }
 
     .div-tecnologia,
@@ -194,9 +192,9 @@
 
     .contactoEnviar {
         & .btn {
-            padding-left: 40% !important;
-            padding-right: 40% !important;
-            margin-bottom: 10px !important;
+            padding-left: 40%;
+            padding-right: 40%;
+            margin-bottom: 10px;
         }
     }
 
@@ -229,12 +227,12 @@
     }
 
     .boletin {
-        margin-bottom: 30px !important;
+        margin-bottom: 30px;
 
         & form {
-            background-color: $mainColor !important;
-            padding-top: 20px !important;
-            padding-bottom: 20px !important;
+            background-color: $mainColor;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
             & #formnombre {
                 margin-left: 15px !important;
@@ -269,8 +267,8 @@
         & form {
 
             padding: (5px 40px 5px 10px);
-            margin-left: 10px !important;
-            margin-right: 10px !important;
+            margin-left: 10px;
+            margin-right: 10px;
 
         }
     }
@@ -297,7 +295,7 @@
     }
 
     .boletin {
-        margin-left: 0px !important;
+        margin-left: 0px;
 
         & form {
             & #formnombre {

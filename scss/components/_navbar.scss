@@ -9,8 +9,8 @@
 
     & .container-fluid {
         max-height: 100px;
-        overflow: hidden !important;
-        scrollbar-width: none !important;
+        overflow: hidden;
+        scrollbar-width: none;
 
         & #imglogo {
             width: 200px;
@@ -52,7 +52,7 @@
         & .offcanvas-body {
 
             & .navbar-nav {
-                margin-bottom: 30px !important;
+                margin-bottom: 30px;
             }
 
             & .tituloMenu {

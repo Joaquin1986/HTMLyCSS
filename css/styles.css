@@ -60,8 +60,8 @@ body textarea {
 }
 .navbar .container-fluid {
   max-height: 100px;
-  overflow: hidden !important;
-  scrollbar-width: none !important;
+  overflow: hidden;
+  scrollbar-width: none;
 }
 .navbar .container-fluid #imglogo {
   width: 200px;
@@ -92,7 +92,7 @@ body textarea {
   background-color: #444444;
 }
 .navbar .container-fluid .offcanvas-body .navbar-nav {
-  margin-bottom: 30px !important;
+  margin-bottom: 30px;
 }
 .navbar .container-fluid .offcanvas-body .tituloMenu {
   position: relative;
@@ -478,11 +478,9 @@ footer img:hover {
     z-index: 10 !important;
     background-color: #444444 !important;
   }
-  .tituloMenu {
+  .tituloH1 {
     left: 67px !important;
     top: -18px !important;
-    font-size: 18pt !important;
-    z-index: 3 !important;
   }
   .whatsappBtn {
     top: 70% !important;
@@ -503,12 +501,12 @@ footer img:hover {
 }
 @media (max-width: 360px) {
   .container-fluid {
-    max-height: 55px !important;
+    max-height: 55px;
   }
   .navbar-toggler {
-    top: -15px !important;
-    max-height: 30px !important;
-    max-width: 40px !important;
+    top: -15px;
+    max-height: 30px;
+    max-width: 40px;
   }
   .navbar-toggler-icon {
     position: relative !important;
@@ -553,7 +551,7 @@ footer img:hover {
     max-height: 75px !important;
   }
   .navbar-toggler {
-    top: -15px !important;
+    top: -15px;
   }
   .tituloMenu {
     left: 153px !important;
@@ -561,19 +559,19 @@ footer img:hover {
     font-size: 24pt !important;
   }
   .whatsappBtn {
-    left: 85% !important;
-    top: 75% !important;
+    left: 85%;
+    top: 75%;
   }
   .whatsappBtn img {
-    height: 50px !important;
-    width: 50px !important;
+    height: 50px;
+    width: 50px;
   }
   p {
-    font-size: 10pt !important;
+    font-size: 10pt;
   }
   .h2titulo {
-    margin-top: 70px !important;
-    font-size: 18pt !important;
+    margin-top: 70px;
+    font-size: 18pt;
   }
   .div-tecnologia,
   .div-analisis,
@@ -588,9 +586,9 @@ footer img:hover {
     text-align: center !important;
   }
   .contactoEnviar .btn {
-    padding-left: 40% !important;
-    padding-right: 40% !important;
-    margin-bottom: 10px !important;
+    padding-left: 40%;
+    padding-right: 40%;
+    margin-bottom: 10px;
   }
   .ordenesEnviar .btn {
     padding-left: 40% !important;
@@ -614,12 +612,12 @@ footer img:hover {
     margin-bottom: 20px;
   }
   .boletin {
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
   }
   .boletin form {
-    background-color: #444444 !important;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
+    background-color: #444444;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .boletin form #formnombre {
     margin-left: 15px !important;
@@ -642,8 +640,8 @@ footer img:hover {
   }
   .boletin form {
     padding: 5px 40px 5px 10px;
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (max-width: 992px) {
@@ -662,7 +660,7 @@ footer img:hover {
     width: 45px;
   }
   .boletin {
-    margin-left: 0px !important;
+    margin-left: 0px;
   }
   .boletin form #formnombre {
     margin-left: 10px;
