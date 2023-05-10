@@ -10,31 +10,34 @@
 
         &:hover {
             @include colors($thirdColor, $thirdColor, $sixthColor);
-            
+
 
         }
     }
 
     & #gridregbtn {
-        @include buildRegInfo(60px,60px);
+        @include buildRegInfo(60px, 60px);
     }
 
-    & #gridinfobtn{
-        @include buildRegInfo(40px,40px);
+    & #gridinfobtn {
+        @include buildRegInfo(40px, 40px);
     }
 }
 
-.divimg1 {
-    & img {
-        margin-top: 30px;
-        @include imageEffect;
+.carousel-inner {
+    & .divimg1 {
+        top: -105px;
+        & img {
+            @include imageEffect;
 
-        &:hover {
-            filter: grayscale(0%) blur(0px);
+            &:hover {
+                filter: grayscale(0%) blur(0px);
+            }
         }
-    }
 
+    }
 }
+
 
 .div-tecnologia,
 .div-analisis,

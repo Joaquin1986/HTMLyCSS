@@ -1,10 +1,17 @@
-/* media queries */
+/* MEDIA QUERIES */
+
+/*DADO QUE EL SITIO ES DESKTOP-FIRST, LAS MEDIA QUERIES SE REALIZAN DE MAYOR A MENOR RESOLUCIÓN*/
+
+/*SETEOS DE PC*/
 
 @media(max-width:992px) {
+
+    //SETEO GENERAL DE PARRAFO
     p {
         font-size: 18px;
     }
 
+    //SETEOS DE INDEX
     .div-tecnologia h3,
     .div-analisis h3,
     .div-award h3 {
@@ -36,6 +43,14 @@
 
 @media(max-width:768px) {
 
+    //SETEOS DE INDEX
+
+    .carousel-inner {
+        & .divimg1 {
+            top: 0px;
+        }
+    }
+
     .div-tecnologia,
     .div-analisis,
     .div-award {
@@ -50,10 +65,6 @@
         text-align: center;
     }
 
-    .contactoEnviar {
-        margin-bottom: 30px;
-    }
-
     .boletin {
         & form {
 
@@ -63,9 +74,41 @@
 
         }
     }
+
+    //SETEOS DE CONTACTO
+
+    .contactoEnviar {
+        margin-bottom: 30px;
+    }
 }
 
+@media(min-width:768px) {
+
+    //SETEOS DE INDEX
+
+    .divimg1 {
+        margin-top: 110px;
+    }
+
+}
+
+@media(max-width:620px) {
+
+    //SETEOS GENERALES
+
+    //BOTON WHATSAPP
+    .whatsappBtn {
+        left: 85%;
+        top: 72%;
+    }
+}
+
+/*SETEOS DE TABLET*/
+
 @media (max-width:576px) {
+
+    //SETEOS DE INDEX
+
     #formnombre {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -80,11 +123,11 @@
             padding-bottom: 20px;
 
             & #formnombre {
-                margin-left: 15px !important;
+                margin-left: 15px;
             }
 
             & #formemail {
-                margin-left: 15px !important;
+                margin-left: 15px;
             }
         }
 
@@ -92,6 +135,8 @@
 }
 
 @media (max-width:500px) {
+
+    //SETEOS GENERALES
     #imglogo {
         width: 150px !important;
         padding-left: 0px !important;
@@ -100,6 +145,24 @@
         margin-top: 0% !important;
     }
 
+    //BOTON WHATSAPP
+    .whatsappBtn {
+        left: 85%;
+        top: 75%;
+
+        & img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    //TITULOS H2 DE SECCIONES, EXCEPTO INDEX
+    .h2titulo {
+        margin-top: 70px;
+        font-size: 18pt;
+    }
+
+    //SETEOS DE NAVBAR
     .tituloH1 {
         left: 153px !important;
         top: -52px !important;
@@ -115,25 +178,21 @@
     }
 
     .tituloMenu {
-        left: 153px !important;
-        top: -52px !important;
-        font-size: 24pt !important;
+        left: 153px;
+        top: -52px;
+        font-size: 24pt
     }
 
-    .whatsappBtn {
-        left: 85%;
-        top: 75%;
+    //SETEOS DE FOOTER
 
-        & img {
-            height: 50px;
-            width: 50px;
-        }
+    footer p {
+        color: $secondColor;
+        font-size: 8pt;
     }
 
-    .h2titulo {
-        margin-top: 70px;
-        font-size: 18pt;
-    }
+
+
+    //SETEOS DE INDEX
 
     .div-tecnologia,
     .div-analisis,
@@ -153,13 +212,7 @@
         margin-bottom: 10px;
     }
 
-    .contactoEnviar {
-        & .btn {
-            padding-left: 40%;
-            padding-right: 40%;
-            margin-bottom: 10px;
-        }
-    }
+    //SETEOS DE ORDENES
 
     .ordenesEnviar {
         & .btn {
@@ -173,17 +226,35 @@
         margin-top: 20px !important;
     }
 
-    footer p {
-        color: $secondColor !important;
-        font-size: 8pt !important;
+    //SETEOS DE CONTACTO
+
+    .contactoEnviar {
+        & .btn {
+            padding-left: 40%;
+            padding-right: 40%;
+            margin-bottom: 10px;
+        }
     }
+
 }
 
+/*SETEOS MOBILE*/
+
 @media (max-width:360px) {
+
+    //SETEOS GENERALES
 
     main p {
         font-size: 16px !important;
     }
+
+    //BOTON WHATSAPP
+    .whatsappBtn {
+        left: 83%;
+        top: 85%;
+    }
+
+    //SETEOS DE NAVBAR
 
     .container-fluid {
         max-height: 55px;
@@ -195,44 +266,8 @@
         max-width: 40px;
     }
 
-    .navbar-toggler-icon {
-        position: relative !important;
-        right: 5px !important;
-        top: -5px !important;
-        max-width: 25px !important;
-    }
+    //SETEOS DE FOOTER
 
-    .div-tecnologia,
-    .div-analisis,
-    .div-award {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    .ubicacion,
-    .mapa,
-    .boletin {
-        margin-top: 15px;
-    }
-
-
-    .contactoEnviar {
-        & .btn {
-            margin-left: 20px !important;
-            padding-left: 30% !important;
-            padding-right: 30% !important;
-
-        }
-    }
-
-    .ordenesEnviar {
-        & .btn {
-            margin-left: 0px !important;
-            padding-left: 30% !important;
-            padding-right: 30% !important;
-
-        }
-    }
 
     footer {
 
@@ -249,14 +284,78 @@
         }
     }
 
+    .navbar-toggler-icon {
+        position: relative !important;
+        right: 5px !important;
+        top: -5px !important;
+        max-width: 25px !important;
+    }
+
+    //SETEOS DE INDEX
+
+    .div-tecnologia,
+    .div-analisis,
+    .div-award {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ubicacion,
+    .mapa,
+    .boletin {
+        margin-top: 15px;
+    }
 
     .descarga-app img {
         margin-bottom: 20px;
     }
 
+    //SETEOS DE ORDENES
+
+    .ordenesEnviar {
+        & .btn {
+            margin-left: 0px !important;
+            padding-left: 30% !important;
+            padding-right: 30% !important;
+
+        }
+    }
+
+    //SETEOS DE CONTACTO
+
+    .contactoEnviar {
+        & .btn {
+            margin-left: 20px !important;
+            padding-left: 30% !important;
+            padding-right: 30% !important;
+
+        }
+    }
+
 }
 
 @media (max-width:310px) {
+
+    //SETEOS GENERALES
+
+    .h2titulo {
+        margin-top: 50px !important;
+        font-size: 18px;
+    }
+
+    //BOTON DE WHATSAPP
+
+    .whatsappBtn {
+        top: 85% !important;
+
+        & img {
+            height: 45px !important;
+            width: 45px !important;
+        }
+    }
+
+    //SETEOS DE NAVBAR
+
     #imglogo {
         width: 120px !important;
         z-index: 2 !important;
@@ -285,23 +384,13 @@
         font-size: 28px !important;
     }
 
-    .whatsappBtn {
-        top: 70% !important;
-
-        & img {
-            height: 45px !important;
-            width: 45px !important;
-        }
-    }
-
-    .h2titulo {
-        margin-top: 50px !important;
-        font-size: 18px;
-    }
+    //SETEOS DE INDEX
 
     #formenviar {
         margin-left: 20px !important;
     }
+
+    //SETEOS DE CONTACTO
 
     .contactoEnviar {
         & .btn {
@@ -312,9 +401,13 @@
 
 @media (max-width:250px) {
 
+    //SETEOS GENERALES
+
     html {
         overflow-x: hidden;
     }
+
+    //SETEOS DE NAVBAR
 
     #imglogo {
         width: 80px !important;
@@ -353,6 +446,29 @@
         margin-bottom: 20px !important;
     }
 
+    //SETEOS DE FOOTER
+
+    footer {
+
+        & h2 {
+            font-size: 12px !important;
+        }
+
+        & p {
+            font-size: 9px !important;
+        }
+
+        & img {
+            max-width: 30px;
+
+            &:hover {
+                max-width: 40px;
+            }
+        }
+    }
+
+    //SETEOS DE INDEX
+
     #formnombre,
     #formemail {
         margin-left: 0px !important;
@@ -383,25 +499,6 @@
         }
     }
 
-    footer {
-
-        & h2 {
-            font-size: 12px !important;
-        }
-
-        & p {
-            font-size: 9px !important;
-        }
-
-        & img {
-            max-width: 30px;
-
-            &:hover {
-                max-width: 40px;
-            }
-        }
-    }
-
     .boletin {
         margin-bottom: 20px;
 
@@ -411,12 +508,4 @@
 
         }
     }
-}
-
-
-@media(min-width:768px) {
-    .divimg1 {
-        margin-top: 110px;
-    }
-
 }

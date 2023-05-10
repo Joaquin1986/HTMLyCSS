@@ -1,14 +1,19 @@
+/* SE DEFINEN LOS MIXIN PARA INCLUIRLOS EN EL SITIO WEB */
+
+//SE USA COLOREAR, PASANDO COMO PARAMETROS EL COLOR DE FONDO, BORDE Y TEXTO
 @mixin colors($backcolor, $bordercolor, $textcolor) {
     background-color: $backcolor !important;
     border-color: $bordercolor !important;
     color: $textcolor !important;
 }
 
+//SE USA PARA DARLE ESPACIADO A LOS FORMULARIOS, PASANDO COMO PARAMETROS EL MARGEN SUPERIOR Y EL IZQUIERDO
 @mixin formSpace ($marginTop, $marginLeft) {
     margin-top: $marginTop;
     margin-left: $marginLeft;
 }
 
+//SE USA PARA CONSTRUIR BOTONES DE ENVIAR (SUBMIT), SIN PARAMETROS
 @mixin buildSubmit {
     @include formSpace(40px, 0%);
     padding-left: 45%;
@@ -18,13 +23,15 @@
     transition: 0.4s;
 }
 
+//SE USA PARA CONSTRUIR LOS BOTONES DE REGISTRO E INFORMACION EN INDEX, PASANDO COMO PARAMETROS RELLENO IZQUIERDO Y DERECHO
 @mixin buildRegInfo ($paddingLeft, $paddingRight) {
     padding-left: $paddingLeft;
     padding-right: $paddingRight;
 }
 
+//SE USA PARA DARLE EFECTO A LAS IMAGENES DEL SITIO, SIN PARAMETROS
 @mixin imageEffect {
-    filter: grayscale(70%) blur(.75px);
+    filter: grayscale($grayscale) blur($blur);
     transition: 0.5s;
     border-radius: 10px;
     margin-bottom: 20px;
