@@ -18,7 +18,12 @@
     transition: 0.4s;
 }
 
-@mixin imageEffect{
+@mixin buildRegInfo ($paddingLeft, $paddingRight) {
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
+}
+
+@mixin imageEffect {
     filter: grayscale(70%) blur(.75px);
     transition: 0.5s;
     border-radius: 10px;

@@ -101,7 +101,7 @@ body textarea {
   left: 210px;
   top: -70px;
   font-size: 34pt;
-  width: 100px;
+  width: 70px;
 }
 
 /* seteos de pie de pagina */
@@ -115,7 +115,7 @@ footer h2 {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
   color: #ebebeb !important;
-  font-size: 12pt;
+  font-size: 16pt;
 }
 
 footer p {
@@ -168,6 +168,28 @@ footer img:hover {
 }
 
 /* seteos de index */
+#gridreginfo {
+  margin-top: 30px;
+}
+#gridreginfo button {
+  background-color: #444444;
+  transition: 0.4s;
+  font-size: 20px;
+}
+#gridreginfo button:hover {
+  background-color: #646464 !important;
+  border-color: #646464 !important;
+  color: #eeecec !important;
+}
+#gridreginfo #gridregbtn {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+#gridreginfo #gridinfobtn {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .divimg1 img {
   margin-top: 30px;
   filter: grayscale(70%) blur(0.75px);
@@ -182,8 +204,19 @@ footer img:hover {
 .div-tecnologia,
 .div-analisis,
 .div-award {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 40px;
+}
+.div-tecnologia img,
+.div-analisis img,
+.div-award img {
+  width: 100px;
+  transition: 0.5s;
+}
+.div-tecnologia img:hover,
+.div-analisis img:hover,
+.div-award img:hover {
+  width: 115px;
 }
 
 .mapa {
@@ -199,29 +232,6 @@ footer img:hover {
 .mapa iframe:hover {
   width: 105%;
   height: 280px;
-}
-
-#gridreginfo button {
-  background-color: #444444;
-  margin-right: 20px;
-  transition: 0.4s;
-}
-#gridreginfo button:hover {
-  background-color: #646464 !important;
-  border-color: #646464 !important;
-  color: #eeecec !important;
-}
-
-.div-analisis img,
-.div-tecnologia img,
-.div-award img {
-  width: 100px;
-  transition: 0.5s;
-}
-.div-analisis img:hover,
-.div-tecnologia img:hover,
-.div-award img:hover {
-  width: 115px;
 }
 
 .formbox {
@@ -442,96 +452,72 @@ footer img:hover {
 }
 
 /* media queries */
-@media (max-width: 250px) {
-  #imglogo {
-    width: 70px !important;
+@media (max-width: 992px) {
+  p {
+    font-size: 18px;
   }
-  .tituloH1 {
-    left: 70px !important;
-    top: -27px !important;
-    font-size: 14pt !important;
-  }
-  .container-fluid {
-    max-height: 45px !important;
-  }
-  .navbar-toggler {
-    top: -15px !important;
-    max-height: 25px !important;
-    max-width: 35px !important;
-  }
-  .navbar-toggler-icon {
-    right: 5px !important;
-    top: -7px !important;
-    max-width: 20px !important;
-  }
-}
-@media (max-width: 310px) {
-  #imglogo {
-    width: 120px !important;
-    z-index: 2 !important;
-  }
-  .container-fluid {
-    max-height: 65px !important;
-    z-index: 1 !important;
-  }
-  .navbar-toggler {
-    z-index: 10 !important;
-    background-color: #444444 !important;
-  }
-  .tituloH1 {
-    left: 67px !important;
-    top: -18px !important;
+  .div-tecnologia h3,
+  .div-analisis h3,
+  .div-award h3 {
+    font-size: 20px;
   }
   .whatsappBtn {
-    top: 70% !important;
+    left: 90%;
+    top: 72%;
+    height: 45px;
+    width: 45px;
   }
-  .whatsappBtn img {
-    height: 45px !important;
-    width: 45px !important;
+  .boletin {
+    margin-left: 0px;
   }
-  .h2titulo {
-    margin-top: 50px !important;
+  .boletin form #formnombre {
+    margin-left: 10px;
   }
-  #formenviar {
-    margin-left: 20px !important;
-  }
-  .contactoEnviar .btn {
-    margin-left: 0px !important;
+  .boletin form #formemail {
+    margin-left: 20px;
   }
 }
-@media (max-width: 360px) {
-  .container-fluid {
-    max-height: 55px;
+@media (max-width: 768px) {
+  .div-tecnologia,
+  .div-analisis,
+  .div-award {
+    margin-top: 20px;
   }
-  .navbar-toggler {
-    top: -15px;
-    max-height: 30px;
-    max-width: 40px;
+  .div-tecnologia img,
+  .div-analisis img,
+  .div-award img {
+    width: 80px;
   }
-  .navbar-toggler-icon {
-    position: relative !important;
-    right: 5px !important;
-    top: -5px !important;
-    max-width: 25px !important;
+  .h2titulo {
+    text-align: center;
   }
-  .contactoEnviar .btn {
-    margin-left: 20px !important;
-    padding-left: 30% !important;
-    padding-right: 30% !important;
+  .contactoEnviar {
+    margin-bottom: 30px;
   }
-  .ordenesEnviar .btn {
-    margin-left: 0px !important;
-    padding-left: 30% !important;
-    padding-right: 30% !important;
+  .boletin form {
+    padding: 5px 40px 5px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  footer img {
-    max-width: 40px;
-  }
-  footer img:hover {
-    max-width: 50px;
-  }
-  .descarga-app img {
+}
+@media (max-width: 576px) {
+  #formnombre {
+    margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .boletin {
+    margin-bottom: 30px;
+  }
+  .boletin form {
+    background-color: #444444;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .boletin form #formnombre {
+    margin-left: 15px !important;
+  }
+  .boletin form #formemail {
+    margin-left: 15px !important;
   }
 }
 @media (max-width: 500px) {
@@ -566,9 +552,6 @@ footer img:hover {
     height: 50px;
     width: 50px;
   }
-  p {
-    font-size: 10pt;
-  }
   .h2titulo {
     margin-top: 70px;
     font-size: 18pt;
@@ -576,14 +559,17 @@ footer img:hover {
   .div-tecnologia,
   .div-analisis,
   .div-award {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .ubicacion,
   .mapa,
   .boletin {
-    margin-top: 30px !important;
-    text-align: center !important;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .mapa {
+    margin-bottom: 10px;
   }
   .contactoEnviar .btn {
     padding-left: 40%;
@@ -598,75 +584,178 @@ footer img:hover {
   #ordenesImg1 {
     margin-top: 20px !important;
   }
-  footer h2 {
-    font-size: 11 pt !important;
-  }
   footer p {
     color: #ebebeb !important;
     font-size: 8pt !important;
   }
 }
-@media (max-width: 576px) {
-  #formnombre {
-    margin-top: 20px;
+@media (max-width: 360px) {
+  main p {
+    font-size: 16px !important;
+  }
+  .container-fluid {
+    max-height: 55px;
+  }
+  .navbar-toggler {
+    top: -15px;
+    max-height: 30px;
+    max-width: 40px;
+  }
+  .navbar-toggler-icon {
+    position: relative !important;
+    right: 5px !important;
+    top: -5px !important;
+    max-width: 25px !important;
+  }
+  .div-tecnologia,
+  .div-analisis,
+  .div-award {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .ubicacion,
+  .mapa,
+  .boletin {
+    margin-top: 15px;
+  }
+  .contactoEnviar .btn {
+    margin-left: 20px !important;
+    padding-left: 30% !important;
+    padding-right: 30% !important;
+  }
+  .ordenesEnviar .btn {
+    margin-left: 0px !important;
+    padding-left: 30% !important;
+    padding-right: 30% !important;
+  }
+  footer h2 {
+    font-size: 16 px;
+  }
+  footer img {
+    max-width: 40px;
+  }
+  footer img:hover {
+    max-width: 50px;
+  }
+  .descarga-app img {
     margin-bottom: 20px;
   }
-  .boletin {
-    margin-bottom: 30px;
-  }
-  .boletin form {
-    background-color: #444444;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .boletin form #formnombre {
-    margin-left: 15px !important;
-  }
-  .boletin form #formemail {
-    margin-left: 15px !important;
-  }
 }
-@media (max-width: 768px) {
-  .div-tecnologia img,
-  .div-analisis img,
-  .div-award img {
-    width: 80px;
+@media (max-width: 310px) {
+  #imglogo {
+    width: 120px !important;
+    z-index: 2 !important;
   }
-  .h2titulo {
-    text-align: center;
+  .container-fluid {
+    max-height: 65px !important;
+    z-index: 1 !important;
+    flex-wrap: wrap;
   }
-  .contactoEnviar {
-    margin-bottom: 30px;
+  .navbar-toggler {
+    z-index: 89 !important;
+    background-color: #444444 !important;
   }
-  .boletin form {
-    padding: 5px 40px 5px 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+  .tituloH1 {
+    left: 125px !important;
+    top: -42px !important;
+    font-size: 26px !important;
   }
-}
-@media (max-width: 992px) {
-  p {
-    font-size: 18px;
-  }
-  .div-tecnologia h3,
-  .div-analisis h3,
-  .div-award h3 {
-    font-size: 20px;
+  .tituloMenu {
+    left: 125px !important;
+    top: -44px !important;
+    font-size: 28px !important;
   }
   .whatsappBtn {
-    left: 90%;
-    top: 72%;
-    height: 45px;
-    width: 45px;
+    top: 70% !important;
+  }
+  .whatsappBtn img {
+    height: 45px !important;
+    width: 45px !important;
+  }
+  .h2titulo {
+    margin-top: 50px !important;
+    font-size: 18px;
+  }
+  #formenviar {
+    margin-left: 20px !important;
+  }
+  .contactoEnviar .btn {
+    margin-left: 0px !important;
+  }
+}
+@media (max-width: 250px) {
+  html {
+    overflow-x: hidden;
+  }
+  #imglogo {
+    width: 80px !important;
+  }
+  .tituloH1 {
+    left: 45px !important;
+    top: -12px !important;
+    font-size: 12pt !important;
+  }
+  .tituloMenu {
+    left: 83px !important;
+    top: -28px !important;
+    font-size: 18px !important;
+  }
+  .container-fluid {
+    max-height: 45px !important;
+  }
+  .navbar-toggler {
+    top: -15px !important;
+    max-height: 25px !important;
+    max-width: 35px !important;
+  }
+  .navbar-toggler-icon {
+    right: 5px !important;
+    top: -7px !important;
+    max-width: 20px !important;
+  }
+  .h2titulo {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  #formnombre,
+  #formemail {
+    margin-left: 0px !important;
+    font-size: 16px !important;
+  }
+  #formenviar {
+    font-size: 16px !important;
+  }
+  .descarga-app img {
+    margin-left: 0px !important;
+    width: 120px;
+  }
+  .descarga-app img:hover {
+    width: 130px;
+  }
+  .descarga-app .googleplay {
+    width: 120px !important;
+  }
+  .descarga-app .googleplay:hover {
+    width: 130px !important;
+  }
+  footer h2 {
+    font-size: 12px !important;
+  }
+  footer p {
+    font-size: 9px !important;
+  }
+  footer img {
+    max-width: 30px;
+  }
+  footer img:hover {
+    max-width: 40px;
   }
   .boletin {
-    margin-left: 0px;
+    margin-bottom: 20px;
   }
-  .boletin form #formnombre {
-    margin-left: 10px;
-  }
-  .boletin form #formemail {
-    margin-left: 20px;
+  .boletin form {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 @media (min-width: 768px) {

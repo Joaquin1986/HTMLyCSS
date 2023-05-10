@@ -1,131 +1,94 @@
 /* media queries */
 
-@media (max-width:250px) {
-    #imglogo {
-        width: 70px !important;
+@media(max-width:992px) {
+    p {
+        font-size: 18px;
     }
 
-    .tituloH1 {
-        left: 70px !important;
-        top: -27px !important;
-        font-size: 14pt !important;
-    }
-
-    .container-fluid {
-        max-height: 45px !important;
-    }
-
-    .navbar-toggler {
-        top: -15px !important;
-        max-height: 25px !important;
-        max-width: 35px !important;
-    }
-
-    .navbar-toggler-icon {
-        right: 5px !important;
-        top: -7px !important;
-        max-width: 20px !important;
-    }
-
-}
-
-@media (max-width:310px) {
-    #imglogo {
-        width: 120px !important;
-        z-index: 2 !important;
-    }
-
-    .container-fluid {
-        max-height: 65px !important;
-        z-index: 1 !important;
-    }
-
-    .navbar-toggler {
-        z-index: 10 !important;
-        background-color: $mainColor !important;
-    }
-
-    .tituloH1 {
-        left: 67px !important;
-        top: -18px !important;
+    .div-tecnologia h3,
+    .div-analisis h3,
+    .div-award h3 {
+        font-size: 20px;
     }
 
     .whatsappBtn {
-        top: 70% !important;
+        left: 90%;
+        top: 72%;
+        height: 45px;
+        width: 45px;
+    }
+
+    .boletin {
+        margin-left: 0px;
+
+        & form {
+            & #formnombre {
+                margin-left: 10px;
+            }
+
+            & #formemail {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:768px) {
+
+    .div-tecnologia,
+    .div-analisis,
+    .div-award {
+        margin-top: 20px;
 
         & img {
-            height: 45px !important;
-            width: 45px !important;
+            width: 80px;
         }
     }
 
     .h2titulo {
-        margin-top: 50px !important;
-    }
-
-    #formenviar {
-        margin-left: 20px !important;
+        text-align: center;
     }
 
     .contactoEnviar {
-        & .btn {
-            margin-left: 0px !important;
+        margin-bottom: 30px;
+    }
+
+    .boletin {
+        & form {
+
+            padding: (5px 40px 5px 10px);
+            margin-left: 10px;
+            margin-right: 10px;
+
         }
     }
 }
 
-@media (max-width:360px) {
-
-    .container-fluid {
-        max-height: 55px;
-    }
-
-    .navbar-toggler {
-        top: -15px;
-        max-height: 30px;
-        max-width: 40px;
-    }
-
-    .navbar-toggler-icon {
-        position: relative !important;
-        right: 5px !important;
-        top: -5px !important;
-        max-width: 25px !important;
-    }
-
-
-
-    .contactoEnviar {
-        & .btn {
-            margin-left: 20px !important;
-            padding-left: 30% !important;
-            padding-right: 30% !important;
-
-        }
-    }
-
-    .ordenesEnviar {
-        & .btn {
-            margin-left: 0px !important;
-            padding-left: 30% !important;
-            padding-right: 30% !important;
-
-        }
-    }
-
-    footer img {
-        max-width: 40px;
-
-        &:hover {
-            max-width: 50px;
-        }
-    }
-
-
-    .descarga-app img {
+@media (max-width:576px) {
+    #formnombre {
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
+    .boletin {
+        margin-bottom: 30px;
+
+        & form {
+            background-color: $mainColor;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            & #formnombre {
+                margin-left: 15px !important;
+            }
+
+            & #formemail {
+                margin-left: 15px !important;
+            }
+        }
+
+    }
 }
 
 @media (max-width:500px) {
@@ -167,10 +130,6 @@
         }
     }
 
-    p {
-        font-size: 10pt;
-    }
-
     .h2titulo {
         margin-top: 70px;
         font-size: 18pt;
@@ -179,15 +138,19 @@
     .div-tecnologia,
     .div-analisis,
     .div-award {
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .ubicacion,
     .mapa,
     .boletin {
-        margin-top: 30px !important;
-        text-align: center !important;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .mapa {
+        margin-bottom: 10px;
     }
 
     .contactoEnviar {
@@ -210,101 +173,242 @@
         margin-top: 20px !important;
     }
 
-    footer h2 {
-        font-size: 11 pt !important;
-    }
-
     footer p {
         color: $secondColor !important;
         font-size: 8pt !important;
     }
 }
 
-@media (max-width:576px) {
-    #formnombre {
-        margin-top: 20px;
+@media (max-width:360px) {
+
+    main p {
+        font-size: 16px !important;
+    }
+
+    .container-fluid {
+        max-height: 55px;
+    }
+
+    .navbar-toggler {
+        top: -15px;
+        max-height: 30px;
+        max-width: 40px;
+    }
+
+    .navbar-toggler-icon {
+        position: relative !important;
+        right: 5px !important;
+        top: -5px !important;
+        max-width: 25px !important;
+    }
+
+    .div-tecnologia,
+    .div-analisis,
+    .div-award {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .ubicacion,
+    .mapa,
+    .boletin {
+        margin-top: 15px;
+    }
+
+
+    .contactoEnviar {
+        & .btn {
+            margin-left: 20px !important;
+            padding-left: 30% !important;
+            padding-right: 30% !important;
+
+        }
+    }
+
+    .ordenesEnviar {
+        & .btn {
+            margin-left: 0px !important;
+            padding-left: 30% !important;
+            padding-right: 30% !important;
+
+        }
+    }
+
+    footer {
+
+        & h2 {
+            font-size: 16 px;
+        }
+
+        & img {
+            max-width: 40px;
+
+            &:hover {
+                max-width: 50px;
+            }
+        }
+    }
+
+
+    .descarga-app img {
         margin-bottom: 20px;
     }
 
-    .boletin {
-        margin-bottom: 30px;
-
-        & form {
-            background-color: $mainColor;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-            & #formnombre {
-                margin-left: 15px !important;
-            }
-
-            & #formemail {
-                margin-left: 15px !important;
-            }
-        }
-
-    }
 }
 
-@media(max-width:768px) {
-
-    .div-tecnologia img,
-    .div-analisis img,
-    .div-award img {
-        width: 80px;
-
+@media (max-width:310px) {
+    #imglogo {
+        width: 120px !important;
+        z-index: 2 !important;
     }
 
-    .h2titulo {
-        text-align: center;
+    .container-fluid {
+        max-height: 65px !important;
+        z-index: 1 !important;
+        flex-wrap: wrap;
     }
 
-    .contactoEnviar {
-        margin-bottom: 30px;
+    .navbar-toggler {
+        z-index: 89 !important;
+        background-color: $mainColor !important;
     }
 
-    .boletin {
-        & form {
-
-            padding: (5px 40px 5px 10px);
-            margin-left: 10px;
-            margin-right: 10px;
-
-        }
-    }
-}
-
-
-
-@media(max-width:992px) {
-    p {
-        font-size: 18px;
+    .tituloH1 {
+        left: 125px !important;
+        top: -42px !important;
+        font-size: 26px !important;
     }
 
-    .div-tecnologia h3,
-    .div-analisis h3,
-    .div-award h3 {
-        font-size: 20px;
+    .tituloMenu {
+        left: 125px !important;
+        top: -44px !important;
+        font-size: 28px !important;
     }
 
     .whatsappBtn {
-        left: 90%;
-        top: 72%;
-        height: 45px;
-        width: 45px;
+        top: 70% !important;
+
+        & img {
+            height: 45px !important;
+            width: 45px !important;
+        }
+    }
+
+    .h2titulo {
+        margin-top: 50px !important;
+        font-size: 18px;
+    }
+
+    #formenviar {
+        margin-left: 20px !important;
+    }
+
+    .contactoEnviar {
+        & .btn {
+            margin-left: 0px !important;
+        }
+    }
+}
+
+@media (max-width:250px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    #imglogo {
+        width: 80px !important;
+    }
+
+    .tituloH1 {
+        left: 45px !important;
+        top: -12px !important;
+        font-size: 12pt !important;
+    }
+
+    .tituloMenu {
+        left: 83px !important;
+        top: -28px !important;
+        font-size: 18px !important;
+    }
+
+    .container-fluid {
+        max-height: 45px !important;
+    }
+
+    .navbar-toggler {
+        top: -15px !important;
+        max-height: 25px !important;
+        max-width: 35px !important;
+    }
+
+    .navbar-toggler-icon {
+        right: 5px !important;
+        top: -7px !important;
+        max-width: 20px !important;
+    }
+
+    .h2titulo {
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #formnombre,
+    #formemail {
+        margin-left: 0px !important;
+        font-size: 16px !important;
+    }
+
+    #formenviar {
+        font-size: 16px !important;
+    }
+
+    .descarga-app {
+
+        & img {
+            margin-left: 0px !important;
+            width: 120px;
+
+            &:hover {
+                width: 130px;
+            }
+        }
+
+        & .googleplay {
+            width: 120px !important;
+
+            &:hover {
+                width: 130px !important;
+            }
+        }
+    }
+
+    footer {
+
+        & h2 {
+            font-size: 12px !important;
+        }
+
+        & p {
+            font-size: 9px !important;
+        }
+
+        & img {
+            max-width: 30px;
+
+            &:hover {
+                max-width: 40px;
+            }
+        }
     }
 
     .boletin {
-        margin-left: 0px;
+        margin-bottom: 20px;
 
         & form {
-            & #formnombre {
-                margin-left: 10px;
-            }
+            padding-top: 0px;
+            padding-bottom: 0px;
 
-            & #formemail {
-                margin-left: 20px;
-            }
         }
     }
 }
