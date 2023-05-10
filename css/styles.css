@@ -97,7 +97,7 @@ body textarea {
   margin-bottom: 30px;
 }
 .navbar .container-fluid .offcanvas-body .tituloMenu {
-  position: relative;
+  position: relative !important;
   color: #ebebeb !important;
   font-family: "ShadowsIntoLight";
   left: 210px;
@@ -573,9 +573,9 @@ footer img:hover {
     top: -15px;
   }
   .tituloMenu {
-    left: 153px;
-    top: -52px;
-    font-size: 24pt;
+    left: 153px !important;
+    top: -52px !important;
+    font-size: 24pt !important;
   }
   footer p {
     color: #ebebeb;

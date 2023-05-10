@@ -55,8 +55,8 @@
                 margin-bottom: 30px;
             }
 
-            & .tituloMenu {
-                position: relative;
+            & .tituloMenu{
+                position: relative !important;
                 color: $secondColor !important;
                 font-family: 'ShadowsIntoLight';
                 left: 210px;
